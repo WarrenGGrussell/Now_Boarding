@@ -20,6 +20,11 @@ ActiveRecord::Schema.define(version: 20140321144528) do
 
     create_table "places" do |t|
     t.string "country"
+    t.boolean "visited"
+    t.references "user"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+
   end
 
 end
