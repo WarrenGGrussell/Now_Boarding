@@ -3,18 +3,31 @@ get '/' do
   erb :index
 end
 
-get '/places' do
-  @places = Place.all
-  erb :'places/index'
+get '/countries' do
+  @countries = Country.all
+  erb :'countries/index'
 end
 
-get 'places/new' do
-  erb :'places/new'
+get 'countries/new' do
+  erb :'countries/new'
 end
 
-get '/places/:id' do
-  @place = Place.find params[:id]
-  erb :'places/show'
+get '/countries/:id' do
+  @country = Country.find params[:id]
+  erb :'countries/show'
+end
+
+post '/countries' do
+  @country = Country.new(
+    title: params[:title],
+    content: params[:content],
+    author:  params[:author]
+  )
+  if @country.save
+  redirect '/countries'
+  else
+    erb :'countries/new'
+  end
 end
 
 get '/login' do
@@ -26,11 +39,11 @@ get '/signup' do
 end
 
 post '/login' do
-  @user = User.find_by(email: params[:email], password: params[:password])
+  @user = User.find_by(username: params[:username], email: params[:email], password: params[:password])
 
   if @user
     session[:user_id] = @user.id
-    redirect '/places/new'
+    redirect '/countries/new'
   else
     erb :'auth/login'
   end
