@@ -26,10 +26,6 @@ get '/signup' do
 end
 
 post '/login' do
-  # @user = User.where(email: params[:email], password: params[:password]).first
-  #
-  # @user = User.where("users.email = ? AND users.password=?", params[:email], params[:password]).first
-
   @user = User.find_by(email: params[:email], password: params[:password])
 
   if @user
