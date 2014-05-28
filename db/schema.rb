@@ -10,21 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321144528) do
+ActiveRecord::Schema.define(version: 20140528181747) do
 
-  create_table "users", force: true do |t|
-    t.string "username"
-    t.string "name"
-    t.string "email"
-  end
-
-    create_table "places" do |t|
-    t.string "country"
-    t.boolean "visited"
-    t.references "user"
+  create_table "places", force: true do |t|
+    t.string   "country"
+    t.boolean  "visited"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
 
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
