@@ -1,5 +1,8 @@
-class FutureCountries < ActiveRecord::Migration
+class AddFutureCountries < ActiveRecord::Migration
   def change
-    add_column :country_id, :user_id, :reference
+    create_table :future_countries do |t|
+      t.belongs_to :country
+      t.belongs_to :user
+    end
   end
 end

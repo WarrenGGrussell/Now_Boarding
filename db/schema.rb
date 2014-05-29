@@ -10,14 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140528181747) do
+ActiveRecord::Schema.define(version: 20140528181753) do
 
-  create_table "places", force: true do |t|
-    t.string   "country"
-    t.boolean  "visited"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "countries", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "future_countries", force: true do |t|
+    t.integer "country_id"
+    t.integer "user_id"
+  end
+
+  create_table "past_countries", force: true do |t|
+    t.integer "country_id"
+    t.integer "user_id"
   end
 
   create_table "users", force: true do |t|
@@ -27,5 +33,5 @@ ActiveRecord::Schema.define(version: 20140528181747) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-#TODO.. TWO new tables.. Past_places and Future_places
+
 end
