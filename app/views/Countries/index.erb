@@ -1,10 +1,1019 @@
-<% @Countries.each do |country| %>
-  <div class="country">
-  
-    <h3><a href="/Countries/<%= Country.id %>"><%= Country.title %></a> <small>(by: <%= Country.author %>)</small></h3>
-    <p>
-      <%= Country.content %>
-    </p>
-  </div>
-<% end %>
-<h1><a href="/Countries/new">Post a Country Please!</a></h1>
+<body>
+  <form>
+    
+    <span class="countryHeader">Africa</span>
+
+    <div class="countryCheckboxes" id="AfricaCountries" >
+      <label for="Algeria, Peoples Democratic Republic of" >
+        <input type="checkbox" name="Algeria, Peoples Democratic Republic of" id="Algeria, Peoples Democratic Republic of" 
+        <p> Algeria, Peoples Democratic Republic of</p>
+      </label>
+    
+      <label for="Angola, Republic of" >
+        <input type="checkbox" name="Angola, Republic of" id="Angola, Republic of" 
+        Angola, Republic of
+      </label>
+    
+      <label for="Benin, Republic of" >
+        <input type="checkbox" name="Benin, Republic of" id="Benin, Republic of" 
+        <p> Benin, Republic of</p>
+      </label>
+      <label for="Botswana, Republic of" >
+        <input type="checkbox" name="Botswana, Republic of" id="Botswana, Republic of" 
+        Botswana, Republic of
+      </label>
+      <label for="Burkina Faso" >
+        <input type="checkbox" name="Burkina Faso" id="Burkina Faso" 
+        Burkina Faso
+      </label>
+      <label for="Burundi, Republic of" >
+        <input type="checkbox" name="Burundi, Republic of" id="Burundi, Republic of" 
+        Burundi, Republic of
+      </label>
+      <label for="Cameroon, Republic of" >
+        <input type="checkbox" name="Cameroon, Republic of" id="Cameroon, Republic of" 
+        Cameroon, Republic of
+      </label>
+      <label for="Cape Verde, Republic of" >
+        <input type="checkbox" name="Cape Verde, Republic of" id="Cape Verde, Republic of" 
+        Cape Verde, Republic of
+      </label>
+      <label for="Central African Republic" >
+        <input type="checkbox" name="Central African Republic" id="Central African Republic" 
+        Central African Republic
+      </label>
+      <label for="Chad, Republic of" >
+        <input type="checkbox" name="Chad, Republic of" id="Chad, Republic of" 
+        Chad, Republic of
+      </label>
+      <label for="Comoros, Union of the" >
+        <input type="checkbox" name="Comoros, Union of the" id="Comoros, Union of the" 
+        Comoros, Union of the
+      </label>
+      <label for="Congo, Democratic Republic of the" >
+        <input type="checkbox" name="Congo, Democratic Republic of the" id="Congo, Democratic Republic of the" 
+        Congo, Democratic Republic of the
+      </label>
+      <label for="Congo, Republic of the" >
+        <input type="checkbox" name="Congo, Republic of the" id="Congo, Republic of the" 
+        Congo, Republic of the
+      </label>
+      <label for="Cote dIvoire, Republic of" >
+        <input type="checkbox" name="Cote dIvoire, Republic of" id="Cote dIvoire, Republic of" 
+        Cote dIvoire, Republic of
+      </label>
+      <label for="Djibouti, Republic of" >
+        <input type="checkbox" name="Djibouti, Republic of" id="Djibouti, Republic of" 
+        Djibouti, Republic of
+      </label>
+      <label for="Egypt, Arab Republic of" >
+        <input type="checkbox" name="Egypt, Arab Republic of" id="Egypt, Arab Republic of" 
+        Egypt, Arab Republic of
+      </label>
+      <label for="Equatorial Guinea, Republic of" >
+        <input type="checkbox" name="Equatorial Guinea, Republic of" id="Equatorial Guinea, Republic of" 
+        Equatorial Guinea, Republic of
+      </label>
+      <label for="Eritrea, State of" >
+        <input type="checkbox" name="Eritrea, State of" id="Eritrea, State of" 
+        Eritrea, State of
+      </label>
+      <label for="Ethiopia, Federal Democratic Republic of" >
+        <input type="checkbox" name="Ethiopia, Federal Democratic Republic of" id="Ethiopia, Federal Democratic Republic of" 
+        Ethiopia, Federal Democratic Republic of
+      </label>
+      <label for="Gabon, Gabonese Republic" >
+        <input type="checkbox" name="Gabon, Gabonese Republic" id="Gabon, Gabonese Republic" 
+        Gabon, Gabonese Republic
+      </label>
+      <label for="Gambia, Republic of the" >
+        <input type="checkbox" name="Gambia, Republic of the" id="Gambia, Republic of the" 
+        Gambia, Republic of the
+      </label>
+      <label for="Ghana, Republic of" >
+        <input type="checkbox" name="Ghana, Republic of" id="Ghana, Republic of" 
+        Ghana, Republic of
+      </label>
+      <label for="Guinea-Bissau, Republic of" >
+        <input type="checkbox" name="Guinea-Bissau, Republic of" id="Guinea-Bissau, Republic of" 
+        Guinea-Bissau, Republic of
+      </label>
+      <label for="Guinea, Republic of" >
+        <input type="checkbox" name="Guinea, Republic of" id="Guinea, Republic of" 
+        Guinea, Republic of
+      </label>
+      <label for="Kenya, Republic of" >
+        <input type="checkbox" name="Kenya, Republic of" id="Kenya, Republic of" 
+        Kenya, Republic of
+      </label>
+      <label for="Lesotho, Kingdom of" >
+        <input type="checkbox" name="Lesotho, Kingdom of" id="Lesotho, Kingdom of" 
+        Lesotho, Kingdom of
+      </label>
+      <label for="Liberia, Republic of" >
+        <input type="checkbox" name="Liberia, Republic of" id="Liberia, Republic of" 
+        Liberia, Republic of
+      </label>
+      <label for="Libyan Arab Jamahiriya" >
+        <input type="checkbox" name="Libyan Arab Jamahiriya" id="Libyan Arab Jamahiriya" 
+        Libyan Arab Jamahiriya
+      </label>
+      <label for="Madagascar, Republic of" >
+        <input type="checkbox" name="Madagascar, Republic of" id="Madagascar, Republic of" 
+        Madagascar, Republic of
+      </label>
+      <label for="Malawi, Republic of" >
+        <input type="checkbox" name="Malawi, Republic of" id="Malawi, Republic of" 
+        Malawi, Republic of
+      </label>
+      <label for="Mali, Republic of" >
+        <input type="checkbox" name="Mali, Republic of" id="Mali, Republic of" 
+        Mali, Republic of
+      </label>
+      <label for="Mauritania, Islamic Republic of" >
+        <input type="checkbox" name="Mauritania, Islamic Republic of" id="Mauritania, Islamic Republic of" 
+        Mauritania, Islamic Republic of
+      </label>
+      <label for="Mauritius, Republic of" >
+        <input type="checkbox" name="Mauritius, Republic of" id="Mauritius, Republic of" 
+        Mauritius, Republic of
+      </label>
+      <label for="Mayotte" >
+        <input type="checkbox" name="Mayotte" id="Mayotte" 
+        Mayotte
+      </label>
+      <label for="Morocco, Kingdom of" >
+        <input type="checkbox" name="Morocco, Kingdom of" id="Morocco, Kingdom of" 
+        Morocco, Kingdom of
+      </label>
+      <label for="Mozambique, Republic of" >
+        <input type="checkbox" name="Mozambique, Republic of" id="Mozambique, Republic of" 
+        Mozambique, Republic of
+      </label>
+      <label for="Namibia, Republic of" >
+        <input type="checkbox" name="Namibia, Republic of" id="Namibia, Republic of" 
+        Namibia, Republic of
+      </label>
+      <label for="Niger, Republic of" >
+        <input type="checkbox" name="Niger, Republic of" id="Niger, Republic of" 
+        Niger, Republic of
+      </label>
+      <label for="Nigeria, Federal Republic of" >
+        <input type="checkbox" name="Nigeria, Federal Republic of" id="Nigeria, Federal Republic of" 
+        Nigeria, Federal Republic of
+      </label>
+      <label for="Reunion" >
+        <input type="checkbox" name="Reunion" id="Reunion" 
+        Reunion
+      </label>
+      <label for="Rwanda, Republic of" >
+        <input type="checkbox" name="Rwanda, Republic of" id="Rwanda, Republic of" 
+        Rwanda, Republic of
+      </label>
+      <label for="Saint Helena" >
+        <input type="checkbox" name="Saint Helena" id="Saint Helena" 
+        Saint Helena
+      </label>
+      <label for="Sao Tome and Principe, Democratic Republic of " >
+        <input type="checkbox" name="Sao Tome and Principe, Democratic Republic of " id="Sao Tome and Principe, Democratic Republic of " 
+        Sao Tome and Principe, Democratic Republic of 
+      </label>
+      <label for="Senegal, Republic of" >
+        <input type="checkbox" name="Senegal, Republic of" id="Senegal, Republic of" 
+        Senegal, Republic of
+      </label>
+      <label for="Seychelles, Republic of" >
+        <input type="checkbox" name="Seychelles, Republic of" id="Seychelles, Republic of" 
+        Seychelles, Republic of
+      </label>
+      <label for="Sierra Leone, Republic of" >
+        <input type="checkbox" name="Sierra Leone, Republic of" id="Sierra Leone, Republic of" 
+        Sierra Leone, Republic of
+      </label>
+      <label for="Somalia, Somali Republic" >
+        <input type="checkbox" name="Somalia, Somali Republic" id="Somalia, Somali Republic" 
+        Somalia, Somali Republic
+      </label>
+      <label for="South Africa, Republic of" >
+        <input type="checkbox" name="South Africa, Republic of" id="South Africa, Republic of" 
+        South Africa, Republic of
+      </label>
+      <label for="Sudan, Republic of" >
+        <input type="checkbox" name="Sudan, Republic of" id="Sudan, Republic of" 
+        Sudan, Republic of
+      </label>
+      <label for="Swaziland, Kingdom of" >
+        <input type="checkbox" name="Swaziland, Kingdom of" id="Swaziland, Kingdom of" 
+        Swaziland, Kingdom of
+      </label>
+      <label for="Tanzania, United Republic of" >
+        <input type="checkbox" name="Tanzania, United Republic of" id="Tanzania, United Republic of" 
+        Tanzania, United Republic of
+      </label>
+      <label for="Togo, Togolese Republic" >
+        <input type="checkbox" name="Togo, Togolese Republic" id="Togo, Togolese Republic" 
+        Togo, Togolese Republic
+      </label>
+      <label for="Tunisia, Tunisian Republic" >
+        <input type="checkbox" name="Tunisia, Tunisian Republic" id="Tunisia, Tunisian Republic" 
+        Tunisia, Tunisian Republic
+      </label>
+      <label for="Uganda, Republic of" >
+        <input type="checkbox" name="Uganda, Republic of" id="Uganda, Republic of" 
+        Uganda, Republic of
+      </label>
+      <label for="Western Sahara" >
+        <input type="checkbox" name="Western Sahara" id="Western Sahara" 
+        Western Sahara
+      </label>
+      <label for="Zambia, Republic of" >
+        <input type="checkbox" name="Zambia, Republic of" id="Zambia, Republic of" 
+        Zambia, Republic of
+      </label>
+      <label for="Zimbabwe, Republic of" >
+        <input type="checkbox" name="Zimbabwe, Republic of" id="Zimbabwe, Republic of" 
+        Zimbabwe, Republic of
+      </label>
+    </div>
+ 
+    <span class="countryHeader">Antarctica</span>
+    <div class="countryCheckboxes" id="AntarcticaCountries" >
+      <label for="Antarctica (the territory South of 60 deg S)" >
+        <input type="checkbox" name="Antarctica (the territory South of 60 deg S)" id="Antarctica (the territory South of 60 deg S)" 
+        Antarctica (the territory South of 60 deg S)
+      </label>
+      <label for="Bouvet Island (Bouvetoya)" >
+        <input type="checkbox" name="Bouvet Island (Bouvetoya)" id="Bouvet Island (Bouvetoya)" 
+        Bouvet Island (Bouvetoya)
+      </label>
+      <label for="French Southern Territories" >
+        <input type="checkbox" name="French Southern Territories" id="French Southern Territories" 
+        French Southern Territories
+      </label>
+      <label for="Heard Island and McDonald Islands" >
+        <input type="checkbox" name="Heard Island and McDonald Islands" id="Heard Island and McDonald Islands" 
+        Heard Island and McDonald Islands
+      </label>
+      <label for="South Georgia and the South Sandwich Islands " >
+        <input type="checkbox" name="South Georgia and the South Sandwich Islands " id="South Georgia and the South Sandwich Islands " 
+        South Georgia and the South Sandwich Islands 
+      </label>
+    </div>
+ 
+    <span class="countryHeader">Asia</span>
+    <div class="countryCheckboxes" id="AsiaCountries">
+      <label for="Afghanistan, Islamic Republic of" >
+        <input type="checkbox" name="Afghanistan, Islamic Republic of" id="Afghanistan, Islamic Republic of" 
+        Afghanistan, Islamic Republic of
+      </label>
+      <label for="Armenia, Republic of" >
+        <input type="checkbox" name="Armenia, Republic of" id="Armenia, Republic of" 
+        Armenia, Republic of
+      </label>
+      <label for="Azerbaijan, Republic of" >
+        <input type="checkbox" name="Azerbaijan, Republic of" id="Azerbaijan, Republic of" 
+        Azerbaijan, Republic of
+      </label>
+      <label for="Bahrain, Kingdom of" >
+        <input type="checkbox" name="Bahrain, Kingdom of" id="Bahrain, Kingdom of" 
+        Bahrain, Kingdom of
+      </label>
+      <label for="Bangladesh, Peoples Republic of" >
+        <input type="checkbox" name="Bangladesh, Peoples Republic of" id="Bangladesh, Peoples Republic of" 
+        Bangladesh, Peoples Republic of
+      </label>
+      <label for="Bhutan, Kingdom of" >
+        <input type="checkbox" name="Bhutan, Kingdom of" id="Bhutan, Kingdom of" 
+        Bhutan, Kingdom of
+      </label>
+      <label for="British Indian Ocean Territory (Chagos Archipelago)" >
+        <input type="checkbox" name="British Indian Ocean Territory (Chagos Archipelago)" id="British Indian Ocean Territory (Chagos Archipelago)" 
+        British Indian Ocean Territory (Chagos Archipelago)
+      </label>
+      <label for="Brunei Darussalam" >
+        <input type="checkbox" name="Brunei Darussalam" id="Brunei Darussalam" 
+        Brunei Darussalam
+      </label>
+      <label for="Cambodia, Kingdom of" >
+        <input type="checkbox" name="Cambodia, Kingdom of" id="Cambodia, Kingdom of" 
+        Cambodia, Kingdom of
+      </label>
+      <label for="China, Peoples Republic of" >
+        <input type="checkbox" name="China, Peoples Republic of" id="China, Peoples Republic of" 
+        China, Peoples Republic of
+      </label>
+      <label for="Christmas Island" >
+        <input type="checkbox" name="Christmas Island" id="Christmas Island" 
+        Christmas Island
+      </label>
+      <label for="Cocos (Keeling) Islands" >
+        <input type="checkbox" name="Cocos (Keeling) Islands" id="Cocos (Keeling) Islands" 
+        Cocos (Keeling) Islands
+      </label>
+      <label for="Cyprus, Republic of" >
+        <input type="checkbox" name="Cyprus, Republic of" id="Cyprus, Republic of" 
+        Cyprus, Republic of
+      </label>
+      <label for="Georgia" >
+        <input type="checkbox" name="Georgia" id="Georgia" 
+        Georgia
+      </label>
+      <label for="Hong Kong, Special Administrative Region of China " >
+        <input type="checkbox" name="Hong Kong, Special Administrative Region of China " id="Hong Kong, Special Administrative Region of China " 
+        Hong Kong, Special Administrative Region of China 
+      </label>
+      <label for="India, Republic of" >
+        <input type="checkbox" name="India, Republic of" id="India, Republic of" 
+        India, Republic of
+      </label>
+      <label for="Indonesia, Republic of" >
+        <input type="checkbox" name="Indonesia, Republic of" id="Indonesia, Republic of" 
+        Indonesia, Republic of
+      </label>
+      <label for="Iran, Islamic Republic of" >
+        <input type="checkbox" name="Iran, Islamic Republic of" id="Iran, Islamic Republic of" 
+        Iran, Islamic Republic of
+      </label>
+      <label for="Iraq, Republic of" >
+        <input type="checkbox" name="Iraq, Republic of" id="Iraq, Republic of" 
+        Iraq, Republic of
+      </label>
+      <label for="Israel, State of" >
+        <input type="checkbox" name="Israel, State of" id="Israel, State of" 
+        Israel, State of
+      </label>
+      <label for="Japan" >
+        <input type="checkbox" name="Japan" id="Japan" 
+        Japan
+      </label>
+      <label for="Jordan, Hashemite Kingdom of" >
+        <input type="checkbox" name="Jordan, Hashemite Kingdom of" id="Jordan, Hashemite Kingdom of" 
+        Jordan, Hashemite Kingdom of
+      </label>
+      <label for="Kazakhstan, Republic of" >
+        <input type="checkbox" name="Kazakhstan, Republic of" id="Kazakhstan, Republic of" 
+        Kazakhstan, Republic of
+      </label>
+      <label for="Korea, Democratic Peoples Republic of" >
+        <input type="checkbox" name="Korea, Democratic Peoples Republic of" id="Korea, Democratic Peoples Republic of" 
+        Korea, Democratic Peoples Republic of
+      </label>
+      <label for="Korea, Republic of" >
+        <input type="checkbox" name="Korea, Republic of" id="Korea, Republic of" 
+        Korea, Republic of
+      </label>
+      <label for="Kuwait, State of" >
+        <input type="checkbox" name="Kuwait, State of" id="Kuwait, State of" 
+        Kuwait, State of
+      </label>
+      <label for="Kyrgyz Republic" >
+        <input type="checkbox" name="Kyrgyz Republic" id="Kyrgyz Republic" 
+        Kyrgyz Republic
+      </label>
+      <label for="Lao Peoples Democratic Republic" >
+        <input type="checkbox" name="Lao Peoples Democratic Republic" id="Lao Peoples Democratic Republic" 
+        Lao Peoples Democratic Republic
+      </label>
+      <label for="Lebanon, Lebanese Republic" >
+        <input type="checkbox" name="Lebanon, Lebanese Republic" id="Lebanon, Lebanese Republic" 
+        Lebanon, Lebanese Republic
+      </label>
+      <label for="Macao, Special Administrative Region of China" >
+        <input type="checkbox" name="Macao, Special Administrative Region of China" id="Macao, Special Administrative Region of China" 
+        Macao, Special Administrative Region of China
+      </label>
+      <label for="Malaysia" >
+        <input type="checkbox" name="Malaysia" id="Malaysia" 
+        Malaysia
+      </label>
+      <label for="Maldives, Republic of" >
+        <input type="checkbox" name="Maldives, Republic of" id="Maldives, Republic of" 
+        Maldives, Republic of
+      </label>
+      <label for="Mongolia" >
+        <input type="checkbox" name="Mongolia" id="Mongolia" 
+        Mongolia
+      </label>
+      <label for="Myanmar, Union of" >
+        <input type="checkbox" name="Myanmar, Union of" id="Myanmar, Union of" 
+        Myanmar, Union of
+      </label>
+      <label for="Nepal, State of" >
+        <input type="checkbox" name="Nepal, State of" id="Nepal, State of" 
+        Nepal, State of
+      </label>
+      <label for="Oman, Sultanate of" >
+        <input type="checkbox" name="Oman, Sultanate of" id="Oman, Sultanate of" 
+        Oman, Sultanate of
+      </label>
+      <label for="Pakistan, Islamic Republic of" >
+        <input type="checkbox" name="Pakistan, Islamic Republic of" id="Pakistan, Islamic Republic of" 
+        Pakistan, Islamic Republic of
+      </label>
+      <label for="Palestinian Territory, Occupied" >
+        <input type="checkbox" name="Palestinian Territory, Occupied" id="Palestinian Territory, Occupied" 
+        Palestinian Territory, Occupied
+      </label>
+      <label for="Philippines, Republic of the" >
+        <input type="checkbox" name="Philippines, Republic of the" id="Philippines, Republic of the" 
+        Philippines, Republic of the
+      </label>
+      <label for="Qatar, State of" >
+        <input type="checkbox" name="Qatar, State of" id="Qatar, State of" 
+        Qatar, State of
+      </label>
+      <label for="Saudi Arabia, Kingdom of" >
+        <input type="checkbox" name="Saudi Arabia, Kingdom of" id="Saudi Arabia, Kingdom of" 
+        Saudi Arabia, Kingdom of
+      </label>
+      <label for="Singapore, Republic of" >
+        <input type="checkbox" name="Singapore, Republic of" id="Singapore, Republic of" 
+        Singapore, Republic of
+      </label>
+      <label for="Sri Lanka, Democratic Socialist Republic of" >
+        <input type="checkbox" name="Sri Lanka, Democratic Socialist Republic of" id="Sri Lanka, Democratic Socialist Republic of" 
+        Sri Lanka, Democratic Socialist Republic of
+      </label>
+      <label for="Syrian Arab Republic" >
+        <input type="checkbox" name="Syrian Arab Republic" id="Syrian Arab Republic" 
+        Syrian Arab Republic
+      </label>
+      <label for="Taiwan" >
+        <input type="checkbox" name="Taiwan" id="Taiwan" 
+        Taiwan
+      </label>
+      <label for="Tajikistan, Republic of" >
+        <input type="checkbox" name="Tajikistan, Republic of" id="Tajikistan, Republic of" 
+        Tajikistan, Republic of
+      </label>
+      <label for="Thailand, Kingdom of" >
+        <input type="checkbox" name="Thailand, Kingdom of" id="Thailand, Kingdom of" 
+        Thailand, Kingdom of
+      </label>
+      <label for="Timor-Leste, Democratic Republic of" >
+        <input type="checkbox" name="Timor-Leste, Democratic Republic of" id="Timor-Leste, Democratic Republic of" 
+        Timor-Leste, Democratic Republic of
+      </label>
+      <label for="Turkey, Republic of" >
+        <input type="checkbox" name="Turkey, Republic of" id="Turkey, Republic of" 
+        Turkey, Republic of
+      </label>
+      <label for="Turkmenistan" >
+        <input type="checkbox" name="Turkmenistan" id="Turkmenistan" 
+        Turkmenistan
+      </label>
+      <label for="United Arab Emirates" >
+        <input type="checkbox" name="United Arab Emirates" id="United Arab Emirates" 
+        United Arab Emirates
+      </label>
+      <label for="Uzbekistan, Republic of" >
+        <input type="checkbox" name="Uzbekistan, Republic of" id="Uzbekistan, Republic of" 
+        Uzbekistan, Republic of
+      </label>
+      <label for="Vietnam, Socialist Republic of" >
+        <input type="checkbox" name="Vietnam, Socialist Republic of" id="Vietnam, Socialist Republic of" 
+        Vietnam, Socialist Republic of
+      </label>
+      <label for="Yemen" >
+        <input type="checkbox" name="Yemen" id="Yemen" 
+        Yemen
+      </label>
+    </div>
+ 
+    <span class="countryHeader">Europe</span>
+    <div class="countryCheckboxes"  id="EuropeCountries" >
+      <label for="Ã�ï¿½land Islands" >
+        <input type="checkbox" name="Ã�ï¿½land Islands" id="Ã�ï¿½land Islands" 
+        Ã�ï¿½land Islands
+      </label>
+      <label for="Albania, Republic of" >
+        <input type="checkbox" name="Albania, Republic of" id="Albania, Republic of" 
+        Albania, Republic of
+      </label>
+      <label for="Andorra, Principality of" >
+        <input type="checkbox" name="Andorra, Principality of" id="Andorra, Principality of" 
+        Andorra, Principality of
+      </label>
+      <label for="Austria, Republic of" >
+        <input type="checkbox" name="Austria, Republic of" id="Austria, Republic of" 
+        Austria, Republic of
+      </label>
+      <label for="Belarus, Republic of" >
+        <input type="checkbox" name="Belarus, Republic of" id="Belarus, Republic of" 
+        Belarus, Republic of
+      </label>
+      <label for="Belgium, Kingdom of" >
+        <input type="checkbox" name="Belgium, Kingdom of" id="Belgium, Kingdom of" 
+        Belgium, Kingdom of
+      </label>
+      <label for="Bosnia and Herzegovina" >
+        <input type="checkbox" name="Bosnia and Herzegovina" id="Bosnia and Herzegovina" 
+        Bosnia and Herzegovina
+      </label>
+      <label for="Bulgaria, Republic of" >
+        <input type="checkbox" name="Bulgaria, Republic of" id="Bulgaria, Republic of" 
+        Bulgaria, Republic of
+      </label>
+      <label for="Croatia, Republic of" >
+        <input type="checkbox" name="Croatia, Republic of" id="Croatia, Republic of" 
+        Croatia, Republic of
+      </label>
+      <label for="Czech Republic" >
+        <input type="checkbox" name="Czech Republic" id="Czech Republic" 
+        Czech Republic
+      </label>
+      <label for="Denmark, Kingdom of" >
+        <input type="checkbox" name="Denmark, Kingdom of" id="Denmark, Kingdom of" 
+        Denmark, Kingdom of
+      </label>
+      <label for="Estonia, Republic of" >
+        <input type="checkbox" name="Estonia, Republic of" id="Estonia, Republic of" 
+        Estonia, Republic of
+      </label>
+      <label for="Faroe Islands" >
+        <input type="checkbox" name="Faroe Islands" id="Faroe Islands" 
+        Faroe Islands
+      </label>
+      <label for="Finland, Republic of" >
+        <input type="checkbox" name="Finland, Republic of" id="Finland, Republic of" 
+        Finland, Republic of
+      </label>
+      <label for="France, French Republic" >
+        <input type="checkbox" name="France, French Republic" id="France, French Republic" 
+        France, French Republic
+      </label>
+      <label for="Germany, Federal Republic of" >
+        <input type="checkbox" name="Germany, Federal Republic of" id="Germany, Federal Republic of" 
+        Germany, Federal Republic of
+      </label>
+      <label for="Gibraltar" >
+        <input type="checkbox" name="Gibraltar" id="Gibraltar" 
+        Gibraltar
+      </label>
+      <label for="Greece, Hellenic Republic" >
+        <input type="checkbox" name="Greece, Hellenic Republic" id="Greece, Hellenic Republic" 
+        Greece, Hellenic Republic
+      </label>
+      <label for="Guernsey, Bailiwick of" >
+        <input type="checkbox" name="Guernsey, Bailiwick of" id="Guernsey, Bailiwick of" 
+        Guernsey, Bailiwick of
+      </label>
+      <label for="Holy See (Vatican City State)" >
+        <input type="checkbox" name="Holy See (Vatican City State)" id="Holy See (Vatican City State)" 
+        Holy See (Vatican City State)
+      </label>
+      <label for="Hungary, Republic of" >
+        <input type="checkbox" name="Hungary, Republic of" id="Hungary, Republic of" 
+        Hungary, Republic of
+      </label>
+      <label for="Iceland, Republic of" >
+        <input type="checkbox" name="Iceland, Republic of" id="Iceland, Republic of" 
+        Iceland, Republic of
+      </label>
+      <label for="Ireland" >
+        <input type="checkbox" name="Ireland" id="Ireland" 
+        Ireland
+      </label>
+      <label for="Isle of Man" >
+        <input type="checkbox" name="Isle of Man" id="Isle of Man" 
+        Isle of Man
+      </label>
+      <label for="Italy, Italian Republic" >
+        <input type="checkbox" name="Italy, Italian Republic" id="Italy, Italian Republic" 
+        Italy, Italian Republic
+      </label>
+      <label for="Jersey, Bailiwick of" >
+        <input type="checkbox" name="Jersey, Bailiwick of" id="Jersey, Bailiwick of" 
+        Jersey, Bailiwick of
+      </label>
+      <label for="Latvia, Republic of" >
+        <input type="checkbox" name="Latvia, Republic of" id="Latvia, Republic of" 
+        Latvia, Republic of
+      </label>
+      <label for="Liechtenstein, Principality of" >
+        <input type="checkbox" name="Liechtenstein, Principality of" id="Liechtenstein, Principality of" 
+        Liechtenstein, Principality of
+      </label>
+      <label for="Lithuania, Republic of" >
+        <input type="checkbox" name="Lithuania, Republic of" id="Lithuania, Republic of" 
+        Lithuania, Republic of
+      </label>
+      <label for="Luxembourg, Grand Duchy of" >
+        <input type="checkbox" name="Luxembourg, Grand Duchy of" id="Luxembourg, Grand Duchy of" 
+        Luxembourg, Grand Duchy of
+      </label>
+      <label for="Macedonia, Republic of" >
+        <input type="checkbox" name="Macedonia, Republic of" id="Macedonia, Republic of" 
+        Macedonia, Republic of
+      </label>
+      <label for="Malta, Republic of" >
+        <input type="checkbox" name="Malta, Republic of" id="Malta, Republic of" 
+        Malta, Republic of
+      </label>
+      <label for="Moldova, Republic of" >
+        <input type="checkbox" name="Moldova, Republic of" id="Moldova, Republic of" 
+        Moldova, Republic of
+      </label>
+      <label for="Monaco, Principality of" >
+        <input type="checkbox" name="Monaco, Principality of" id="Monaco, Principality of" 
+        Monaco, Principality of
+      </label>
+      <label for="Montenegro, Republic of" >
+        <input type="checkbox" name="Montenegro, Republic of" id="Montenegro, Republic of" 
+        Montenegro, Republic of
+      </label>
+      <label for="Netherlands, Kingdom of the" >
+        <input type="checkbox" name="Netherlands, Kingdom of the" id="Netherlands, Kingdom of the" 
+        Netherlands, Kingdom of the
+      </label>
+      <label for="Norway, Kingdom of" >
+        <input type="checkbox" name="Norway, Kingdom of" id="Norway, Kingdom of" 
+        Norway, Kingdom of
+      </label>
+      <label for="Poland, Republic of" >
+        <input type="checkbox" name="Poland, Republic of" id="Poland, Republic of" 
+        Poland, Republic of
+      </label>
+      <label for="Portugal, Portuguese Republic" >
+        <input type="checkbox" name="Portugal, Portuguese Republic" id="Portugal, Portuguese Republic" 
+        Portugal, Portuguese Republic
+      </label>
+      <label for="Romania" >
+        <input type="checkbox" name="Romania" id="Romania" 
+        Romania
+      </label>
+      <label for="Russian Federation" >
+        <input type="checkbox" name="Russian Federation" id="Russian Federation" 
+        Russian Federation
+      </label>
+      <label for="San Marino, Republic of" >
+        <input type="checkbox" name="San Marino, Republic of" id="San Marino, Republic of" 
+        San Marino, Republic of
+      </label>
+      <label for="Serbia, Republic of" >
+        <input type="checkbox" name="Serbia, Republic of" id="Serbia, Republic of" 
+        Serbia, Republic of
+      </label>
+      <label for="Slovakia (Slovak Republic)" >
+        <input type="checkbox" name="Slovakia (Slovak Republic)" id="Slovakia (Slovak Republic)" 
+        Slovakia (Slovak Republic)
+      </label>
+      <label for="Slovenia, Republic of" >
+        <input type="checkbox" name="Slovenia, Republic of" id="Slovenia, Republic of" 
+        Slovenia, Republic of
+      </label>
+      <label for="Spain, Kingdom of" >
+        <input type="checkbox" name="Spain, Kingdom of" id="Spain, Kingdom of" 
+        Spain, Kingdom of
+      </label>
+      <label for="Svalbard & Jan Mayen Islands" >
+        <input type="checkbox" name="Svalbard & Jan Mayen Islands" id="Svalbard & Jan Mayen Islands" 
+        Svalbard & Jan Mayen Islands
+      </label>
+      <label for="Sweden, Kingdom of" >
+        <input type="checkbox" name="Sweden, Kingdom of" id="Sweden, Kingdom of" 
+        Sweden, Kingdom of
+      </label>
+      <label for="Switzerland, Swiss Confederation" >
+        <input type="checkbox" name="Switzerland, Swiss Confederation" id="Switzerland, Swiss Confederation" 
+        Switzerland, Swiss Confederation
+      </label>
+      <label for="Ukraine" >
+        <input type="checkbox" name="Ukraine" id="Ukraine" 
+        Ukraine
+      </label>
+      <label for="United Kingdom of Great Britain & Northern Ireland" >
+        <input type="checkbox" name="United Kingdom of Great Britain & Northern Ireland" id="United Kingdom of Great Britain & Northern Ireland" 
+        United Kingdom of Great Britain & Northern Ireland
+      </label>
+    </div>
+ 
+    <span class="countryHeader">North America</span>
+    <div class="countryCheckboxes" id="NorthAmericaCountries">
+      <label for="Anguilla" >
+        <input type="checkbox" name="Anguilla" id="Anguilla" 
+        Anguilla
+      </label>
+      <label for="Antigua and Barbuda" >
+        <input type="checkbox" name="Antigua and Barbuda" id="Antigua and Barbuda" 
+        Antigua and Barbuda
+      </label>
+      <label for="Aruba" >
+        <input type="checkbox" name="Aruba" id="Aruba" 
+        Aruba
+      </label>
+      <label for="Bahamas, Commonwealth of the" >
+        <input type="checkbox" name="Bahamas, Commonwealth of the" id="Bahamas, Commonwealth of the" 
+        Bahamas, Commonwealth of the
+      </label>
+      <label for="Barbados" >
+        <input type="checkbox" name="Barbados" id="Barbados" 
+        Barbados
+      </label>
+      <label for="Belize" >
+        <input type="checkbox" name="Belize" id="Belize" 
+        Belize
+      </label>
+      <label for="Bermuda" >
+        <input type="checkbox" name="Bermuda" id="Bermuda" 
+        Bermuda
+      </label>
+      <label for="British Virgin Islands" >
+        <input type="checkbox" name="British Virgin Islands" id="British Virgin Islands" 
+        British Virgin Islands
+      </label>
+      <label for="Canada" >
+        <input type="checkbox" name="Canada" id="Canada" 
+        Canada
+      </label>
+      <label for="Cayman Islands" >
+        <input type="checkbox" name="Cayman Islands" id="Cayman Islands" 
+        Cayman Islands
+      </label>
+      <label for="Costa Rica, Republic of" >
+        <input type="checkbox" name="Costa Rica, Republic of" id="Costa Rica, Republic of" 
+        Costa Rica, Republic of
+      </label>
+      <label for="Cuba, Republic of" >
+        <input type="checkbox" name="Cuba, Republic of" id="Cuba, Republic of" 
+        Cuba, Republic of
+      </label>
+      <label for="Dominica, Commonwealth of" >
+        <input type="checkbox" name="Dominica, Commonwealth of" id="Dominica, Commonwealth of" 
+        Dominica, Commonwealth of
+      </label>
+      <label for="Dominican Republic" >
+        <input type="checkbox" name="Dominican Republic" id="Dominican Republic" 
+        Dominican Republic
+      </label>
+      <label for="El Salvador, Republic of" >
+        <input type="checkbox" name="El Salvador, Republic of" id="El Salvador, Republic of" 
+        El Salvador, Republic of
+      </label>
+      <label for="Greenland" >
+        <input type="checkbox" name="Greenland" id="Greenland" 
+        Greenland
+      </label>
+      <label for="Grenada" >
+        <input type="checkbox" name="Grenada" id="Grenada" 
+        Grenada
+      </label>
+      <label for="Guadeloupe" >
+        <input type="checkbox" name="Guadeloupe" id="Guadeloupe" 
+        Guadeloupe
+      </label>
+      <label for="Guatemala, Republic of" >
+        <input type="checkbox" name="Guatemala, Republic of" id="Guatemala, Republic of" 
+        Guatemala, Republic of
+      </label>
+      <label for="Haiti, Republic of" >
+        <input type="checkbox" name="Haiti, Republic of" id="Haiti, Republic of" 
+        Haiti, Republic of
+      </label>
+      <label for="Honduras, Republic of" >
+        <input type="checkbox" name="Honduras, Republic of" id="Honduras, Republic of" 
+        Honduras, Republic of
+      </label>
+      <label for="Jamaica" >
+        <input type="checkbox" name="Jamaica" id="Jamaica" 
+        Jamaica
+      </label>
+      <label for="Martinique" >
+        <input type="checkbox" name="Martinique" id="Martinique" 
+        Martinique
+      </label>
+      <label for="Mexico, United Mexican States" >
+        <input type="checkbox" name="Mexico, United Mexican States" id="Mexico, United Mexican States" 
+        Mexico, United Mexican States
+      </label>
+      <label for="Montserrat" >
+        <input type="checkbox" name="Montserrat" id="Montserrat" 
+        Montserrat
+      </label>
+      <label for="Netherlands Antilles" >
+        <input type="checkbox" name="Netherlands Antilles" id="Netherlands Antilles" 
+        Netherlands Antilles
+      </label>
+      <label for="Nicaragua, Republic of" >
+        <input type="checkbox" name="Nicaragua, Republic of" id="Nicaragua, Republic of" 
+        Nicaragua, Republic of
+      </label>
+      <label for="Panama, Republic of" >
+        <input type="checkbox" name="Panama, Republic of" id="Panama, Republic of" 
+        Panama, Republic of
+      </label>
+      <label for="Puerto Rico, Commonwealth of" >
+        <input type="checkbox" name="Puerto Rico, Commonwealth of" id="Puerto Rico, Commonwealth of" 
+        Puerto Rico, Commonwealth of
+      </label>
+      <label for="Saint Barthelemy" >
+        <input type="checkbox" name="Saint Barthelemy" id="Saint Barthelemy" 
+        Saint Barthelemy
+      </label>
+      <label for="Saint Kitts and Nevis, Federation of" >
+        <input type="checkbox" name="Saint Kitts and Nevis, Federation of" id="Saint Kitts and Nevis, Federation of" 
+        Saint Kitts and Nevis, Federation of
+      </label>
+      <label for="Saint Lucia" >
+        <input type="checkbox" name="Saint Lucia" id="Saint Lucia" 
+        Saint Lucia
+      </label>
+      <label for="Saint Martin" >
+        <input type="checkbox" name="Saint Martin" id="Saint Martin" 
+        Saint Martin
+      </label>
+      <label for="Saint Pierre and Miquelon" >
+        <input type="checkbox" name="Saint Pierre and Miquelon" id="Saint Pierre and Miquelon" 
+        Saint Pierre and Miquelon
+      </label>
+      <label for="Saint Vincent and the Grenadines" >
+        <input type="checkbox" name="Saint Vincent and the Grenadines" id="Saint Vincent and the Grenadines" 
+        Saint Vincent and the Grenadines
+      </label>
+      <label for="Trinidad and Tobago, Republic of" >
+        <input type="checkbox" name="Trinidad and Tobago, Republic of" id="Trinidad and Tobago, Republic of" 
+        Trinidad and Tobago, Republic of
+      </label>
+      <label for="Turks and Caicos Islands" >
+        <input type="checkbox" name="Turks and Caicos Islands" id="Turks and Caicos Islands" 
+        Turks and Caicos Islands
+      </label>
+      <label for="United States of America" >
+        <input type="checkbox" name="United States of America" id="United States of America" 
+        United States of America
+      </label>
+      <label for="United States Virgin Islands" >
+        <input type="checkbox" name="United States Virgin Islands" id="United States Virgin Islands" 
+        United States Virgin Islands
+      </label>
+    </div>
+ 
+    <span class="countryHeader">Oceania</span>
+    <div class="countryCheckboxes" id="OceaniaCountries">
+      <label for="American Samoa" >
+        <input type="checkbox" name="American Samoa" id="American Samoa" 
+        American Samoa
+      </label>
+      <label for="Australia, Commonwealth of" >
+        <input type="checkbox" name="Australia, Commonwealth of" id="Australia, Commonwealth of" 
+        Australia, Commonwealth of
+      </label>
+      <label for="Cook Islands" >
+        <input type="checkbox" name="Cook Islands" id="Cook Islands" 
+        Cook Islands
+      </label>
+      <label for="Fiji, Republic of the Fiji Islands" >
+        <input type="checkbox" name="Fiji, Republic of the Fiji Islands" id="Fiji, Republic of the Fiji Islands" 
+        Fiji, Republic of the Fiji Islands
+      </label>
+      <label for="French Polynesia" >
+        <input type="checkbox" name="French Polynesia" id="French Polynesia" 
+        French Polynesia
+      </label>
+      <label for="Guam" >
+        <input type="checkbox" name="Guam" id="Guam" 
+        Guam
+      </label>
+      <label for="Kiribati, Republic of" >
+        <input type="checkbox" name="Kiribati, Republic of" id="Kiribati, Republic of" 
+        Kiribati, Republic of
+      </label>
+      <label for="Marshall Islands, Republic of the" >
+        <input type="checkbox" name="Marshall Islands, Republic of the" id="Marshall Islands, Republic of the" 
+        Marshall Islands, Republic of the
+      </label>
+      <label for="Micronesia, Federated States of" >
+        <input type="checkbox" name="Micronesia, Federated States of" id="Micronesia, Federated States of" 
+        Micronesia, Federated States of
+      </label>
+      <label for="Nauru, Republic of" >
+        <input type="checkbox" name="Nauru, Republic of" id="Nauru, Republic of" 
+        Nauru, Republic of
+      </label>
+      <label for="New Caledonia" >
+        <input type="checkbox" name="New Caledonia" id="New Caledonia" 
+        New Caledonia
+      </label>
+      <label for="New Zealand" >
+        <input type="checkbox" name="New Zealand" id="New Zealand" 
+        New Zealand
+      </label>
+      <label for="Niue" >
+        <input type="checkbox" name="Niue" id="Niue" 
+        Niue
+      </label>
+      <label for="Norfolk Island" >
+        <input type="checkbox" name="Norfolk Island" id="Norfolk Island" 
+        Norfolk Island
+      </label>
+      <label for="Northern Mariana Islands, Commonwealth of the" >
+        <input type="checkbox" name="Northern Mariana Islands, Commonwealth of the" id="Northern Mariana Islands, Commonwealth of the" 
+        Northern Mariana Islands, Commonwealth of the
+      </label>
+      <label for="Palau, Republic of" >
+        <input type="checkbox" name="Palau, Republic of" id="Palau, Republic of" 
+        Palau, Republic of
+      </label>
+      <label for="Papua New Guinea, Independent State of" >
+        <input type="checkbox" name="Papua New Guinea, Independent State of" id="Papua New Guinea, Independent State of" 
+        Papua New Guinea, Independent State of
+      </label>
+      <label for="Pitcairn Islands" >
+        <input type="checkbox" name="Pitcairn Islands" id="Pitcairn Islands" 
+        Pitcairn Islands
+      </label>
+      <label for="Samoa, Independent State of" >
+        <input type="checkbox" name="Samoa, Independent State of" id="Samoa, Independent State of" 
+        Samoa, Independent State of
+      </label>
+      <label for="Solomon Islands" >
+        <input type="checkbox" name="Solomon Islands" id="Solomon Islands" 
+        Solomon Islands
+      </label>
+      <label for="Tokelau" >
+        <input type="checkbox" name="Tokelau" id="Tokelau" 
+        Tokelau
+      </label>
+      <label for="Tonga, Kingdom of" >
+        <input type="checkbox" name="Tonga, Kingdom of" id="Tonga, Kingdom of" 
+        Tonga, Kingdom of
+      </label>
+      <label for="Tuvalu" >
+        <input type="checkbox" name="Tuvalu" id="Tuvalu" 
+        Tuvalu
+      </label>
+      <label for="United States Minor Outlying Islands" >
+        <input type="checkbox" name="United States Minor Outlying Islands" id="United States Minor Outlying Islands" 
+        United States Minor Outlying Islands
+      </label>
+      <label for="Vanuatu, Republic of" >
+        <input type="checkbox" name="Vanuatu, Republic of" id="Vanuatu, Republic of" 
+        Vanuatu, Republic of
+      </label>
+      <label for="Wallis and Futuna" >
+        <input type="checkbox" name="Wallis and Futuna" id="Wallis and Futuna" 
+        Wallis and Futuna
+      </label>
+    </div>
+ 
+    <span class="countryHeader">South America</span>
+    <div class="countryCheckboxes" id="SouthAmericaCountries">
+      <label for="Argentina, Argentine Republic" >
+        <input type="checkbox" name="Argentina, Argentine Republic" id="Argentina, Argentine Republic" 
+        Argentina, Argentine Republic
+      </label>
+      <label for="Bolivia, Republic of" >
+        <input type="checkbox" name="Bolivia, Republic of" id="Bolivia, Republic of" 
+        Bolivia, Republic of
+      </label>
+      <label for="Brazil, Federative Republic of" >
+        <input type="checkbox" name="Brazil, Federative Republic of" id="Brazil, Federative Republic of" 
+        Brazil, Federative Republic of
+      </label>
+      <label for="Chile, Republic of" >
+        <input type="checkbox" name="Chile, Republic of" id="Chile, Republic of" 
+        Chile, Republic of
+      </label>
+      <label for="Colombia, Republic of" >
+        <input type="checkbox" name="Colombia, Republic of" id="Colombia, Republic of" 
+        Colombia, Republic of
+      </label>
+      <label for="Ecuador, Republic of" >
+        <input type="checkbox" name="Ecuador, Republic of" id="Ecuador, Republic of" 
+        Ecuador, Republic of
+      </label>
+      <label for="Falkland Islands (Malvinas)" >
+        <input type="checkbox" name="Falkland Islands (Malvinas)" id="Falkland Islands (Malvinas)" 
+        Falkland Islands (Malvinas)
+      </label>
+      <label for="French Guiana" >
+        <input type="checkbox" name="French Guiana" id="French Guiana" 
+        French Guiana
+      </label>
+      <label for="Guyana, Co-operative Republic of" >
+        <input type="checkbox" name="Guyana, Co-operative Republic of" id="Guyana, Co-operative Republic of" 
+        Guyana, Co-operative Republic of
+      </label>
+      <label for="Paraguay, Republic of" >
+        <input type="checkbox" name="Paraguay, Republic of" id="Paraguay, Republic of" 
+        Paraguay, Republic of
+      </label>
+      <label for="Peru, Republic of" >
+        <input type="checkbox" name="Peru, Republic of" id="Peru, Republic of" 
+        Peru, Republic of
+      </label>
+      <label for="Suriname, Republic of" >
+        <input type="checkbox" name="Suriname, Republic of" id="Suriname, Republic of" 
+        Suriname, Republic of
+      </label>
+      <label for="Uruguay, Eastern Republic of" >
+        <input type="checkbox" name="Uruguay, Eastern Republic of" id="Uruguay, Eastern Republic of" 
+        Uruguay, Eastern Republic of
+      </label>
+      <label for="Venezuela, Bolivarian Republic of" >
+        <input type="checkbox" name="Venezuela, Bolivarian Republic of" id="Venezuela, Bolivarian Republic of" 
+        Venezuela, Bolivarian Republic of
+      </label>
+    </div>
+  </form>
+</body>

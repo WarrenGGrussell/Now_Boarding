@@ -27,3 +27,27 @@ img:hover {
   zoom: 1;
   opacity: 0.5;
 }
+
+
+label{
+  display:block;
+  margin:6px 0;
+  overflow:hidden;
+  float:none;
+}
+
+.countryHeader{
+  font-weight:bold;
+  text-decoration:underline;
+  display:block;
+  font-size:1.2em;
+}
+
+.countryCheckboxes{
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  column-count: 3;
+  column-gap: 15px; 
+}
