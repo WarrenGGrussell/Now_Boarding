@@ -31,9 +31,9 @@ img:hover {
 
 label{
   display:block;
-  margin:6px 0;
+  margin:6px 8px;
   overflow:hidden;
-  float:none;
+  float:left;
   color: white
 }
 
@@ -46,10 +46,10 @@ label{
 }
 
 .countryCheckboxes{
-  -moz-column-count: 3;
+  -moz-column-count: 4;
   -moz-column-gap: 15px;
-  -webkit-column-count: 3;
+  -webkit-column-count: 4;
   -webkit-column-gap: 15px;
-  column-count: 3;
+  column-count: 4;
   column-gap: 15px; 
 }
