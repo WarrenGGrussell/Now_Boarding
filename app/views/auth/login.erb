@@ -1,9 +1,15 @@
-<h1>Login Page</h1>
+<br>
+</br>
+<form action="/login" method="post">
 
-<form method="post" action="/login">
-  <div>
-    <label>Username</label>
-    <input type="text" name="username">
+<div class="centerwhite">Calling all Travellers.</div>
+</br>
+
+  <div class="centerwhite">
+    <label>Username:</label>
+  </div>
+  <div class="center">
+    <input type="text" name="username" value="<%= @user && @user.username %>">
   </div>
   
   <div>
@@ -11,13 +17,34 @@
     <input type="text" name="email">
   </div>
 
-  <div>
-    <label>Password</label>
-    <input type="password" name="password">
+<br>
+
+  <div class="centerwhite">
+    <label>Password:</label>
+  </div>
+  <div class="center">
+      <input type="text" name="password" value="<%= @user && @user.password %>">
   </div>
 
-  <div>
+  <div class="center">
     <input type="submit" value="Submit">
   </div>
- 
+
+</form>
+
+<% if @user && @user.errors.any? %>
+  <div>
+    <strong>Email or password seems invalid, please fix:</strong>
+    <ul>
+      <% @user.errors.full_users.each do |user| %>
+        <li><%= user %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<br>
+<div class="centerwhite">Don't have a login?</div>
+  <form action="/signup">
+    <div class="center"><input type="submit" value="Sign up"></div>
 </form>
