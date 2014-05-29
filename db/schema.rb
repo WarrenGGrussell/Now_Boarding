@@ -27,5 +27,5 @@ ActiveRecord::Schema.define(version: 20140528181747) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
+#TODO.. TWO new tables.. Past_places and Future_places
 end

@@ -19,9 +19,7 @@ end
 
 post '/countries' do
   @country = Country.new(
-    title: params[:title],
-    content: params[:content],
-    author:  params[:author]
+    name: params[:name]
   )
   if @country.save
   redirect '/countries'
@@ -41,10 +39,24 @@ end
 post '/login' do
   @user = User.find_by(username: params[:username], email: params[:email], password: params[:password])
 
-  if @user
+  if @user.save
     session[:user_id] = @user.id
     redirect '/countries/new'
   else
     erb :'auth/login'
+  end
+end
+
+post '/signup' do
+  @user = User.new(
+    username: params[:username],
+    email: params[:email],
+    password: params[:password]
+  )
+  if @user.save
+    session[:user_id] = @user.id
+    redirect '/countries/new'
+  else
+    erb :'auth/signup'
   end
 end

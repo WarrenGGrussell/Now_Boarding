@@ -1,0 +1,10 @@
+<% @Countries.each do |country| %>
+  <div class="country">
+  
+    <h3><a href="/Countries/<%= Country.id %>"><%= Country.title %></a> <small>(by: <%= Country.author %>)</small></h3>
+    <p>
+      <%= Country.content %>
+    </p>
+  </div>
+<% end %>
+<h1><a href="/Countries/new">Post a Country Please!</a></h1>
