@@ -1,10 +1,10 @@
-<% @messages.each do |message| %>
-  <div class="message">
+<% @Countries.each do |country| %>
+  <div class="country">
   
-    <h3><a href="/messages/<%= message.id %>"><%= message.title %></a> <small>(by: <%= message.author %>)</small></h3>
+    <h3><a href="/Countries/<%= Country.id %>"><%= Country.title %></a> <small>(by: <%= Country.author %>)</small></h3>
     <p>
-      <%= message.content %>
+      <%= Country.content %>
     </p>
   </div>
 <% end %>
-<a href="/messages/new">Post a message... It's FREE (for now)!</a>
+<h1><a href="/Countries/new">Post a Country Please!</a></h1>
