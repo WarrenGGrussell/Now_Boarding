@@ -1,0 +1,16 @@
+<body id="profile"">
+<div class="sidebar">
+  
+<br><div>NOW BOARDING</div></br>
+<% if current_user %>
+  <form action="/logout" method="post">
+    <input type="submit" value="Log out">
+  </form>
+<% else %>
+  <form action="/login" method="post">
+    <input type="submit" value="Log in">
+  </form>
+<% end %>
+
+</div>
+</body>

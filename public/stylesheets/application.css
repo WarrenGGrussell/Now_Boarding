@@ -29,12 +29,23 @@ img:hover {
 }
 
 .sidebar {
-  width: 40%;
+  width: 60%;
   height: 705px;
   /*margin: 0 auto;*/
-  background: url("https://scontent-a-sea.xx.fbcdn.net/hphotos-xaf1/t1.0-9/998964_10153998594715254_423433104_n.jpg") top left no-repeat;
+  float: right;
+  background: none;
+  background-color: white;
+}
+
+body#profile {
+  
+  background: url("https://scontent-b-sea.xx.fbcdn.net/hphotos-xfa1/t1.0-9/397788_10152785511090254_1998312743_n.jpg") top right no-repeat;
   background-color: black;
-  text-align: center;
+  background-size: cover;
+}
+
+.right {
+  text-align: right;
 }
 
 
