@@ -30,7 +30,7 @@ img:hover {
 
 .sidebar {
   width: 60%;
-  min-height: 100%;
+  height: 100%;
   /*margin: 0 auto;*/
   float: right;
   background: none;
