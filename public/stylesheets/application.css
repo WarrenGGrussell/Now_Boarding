@@ -38,10 +38,10 @@ img:hover {
 }
 
 
-
+/*DONT CHANGE THIS*/
 label{
   display:block;
-  margin:12px 10px;
+  margin:4px 0px;
   overflow:hidden;
   float:none;
   color: white
