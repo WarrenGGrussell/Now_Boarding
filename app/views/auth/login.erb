@@ -10,28 +10,23 @@
 
     <br>
 
-
-      <div>
       <h4>Username:</h4>
-      </div>
       <div class="center">
-        <input type="text" name="username" value="<%= @user && @user.username %>">
+        <input type="text" name=c"username" value="<%= @user && @user.username %>">
       </div>
 
     <br>
 
-      <div>
-        <h4>Password:</h4>
-      </div>
+      <h4>Password:</h4>
       <div class="center">
           <input type="text" name="password" value="<%= @user && @user.password %>">
       </div>
-      <div>
-    </div>
 
     <br>
 
-    <div class="center"><a href="/login" class="btn btn-default">Log in</a></div>
+    <div class="center">
+      <input class="btn btn-default" type="submit" value="Log in">
+    </div>
 
   </form>
 
