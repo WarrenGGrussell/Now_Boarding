@@ -40,7 +40,7 @@ post '/login' do
 end
 
 get '/profile' do
-  @current_user = current_user
+  @current_user = User.find session[:user_id]
   erb :'profile/index'
 end
 

@@ -1,39 +1,31 @@
-<br>
-</br>
+  <a href="/"><img class="minilogo" src="images/white.png"></a>
 
-<form action="/signup" method="post">
-<div class="centerwhite"> Time To Jet.</div>
+  <form action="/signup" method="post">
 
-</br>
+    <h4>Username:</h4>
+    <div class="center">
+      <input type="text" name="username" value="<%= @user && @user.username %>">
+    </div>
 
-  <div class="centerwhite">
-    <label>Username:</label>
-  </div>
-  <div class="center">
-    <input type="text" name="username" value="<%= @user && @user.username %>">
-  </div>
+    <br>
 
-<br>
+    <h4>Email:</h4>
+    <div class="center">
+      <input type="text" name="email" value="<%= @user && @user.email %>">
+    </div>
 
-  <div class="centerwhite">
-    <label>Email:</label>
-  </div>
-  <div class="center">
-    <input type="text" name="email" value="<%= @user && @user.email %>">
-  </div>
+    <br>
 
-<br>
+    <h4>Password:</h4>
+    <div class="center">
+        <input type="text" name="password" value="<%= @user && @user.password %>">
+    </div>
 
-  <div class="centerwhite">
-    <label>Password:</label>
-  </div>
-  <div class="center">
-      <input type="text" name="password" value="<%= @user && @user.password %>">
-  </div>
+    <br>
 
-  <div class="center">
-    <input type="submit" value="Submit">
-  </div>
+    <div class="center">
+    <a href="/signup" class="btn btn-default">Sign up</a>
+    </div>
 
 </form>
 
@@ -48,8 +40,7 @@
   </div>
 <% end %>
 
-<br>
-<div class="centerwhite">Hold up. Got an account with us already?</div>
-  <div class="center"><form action="/login">
-    <input type="submit" value="Log in">
-</form>
+  <br>
+
+  <h4>Hold up. Got an account with us already?</h4>
+  <div class="center"><a href="/login" class="btn btn-default">Log in</a></div>

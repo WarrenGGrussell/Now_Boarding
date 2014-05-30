@@ -1,46 +1,52 @@
-<br>
-</br>
+  <a href="/"><img class="minilogo" src="images/white.png"></a>
+  
+  <p class="lead topmargin">
+    Calling all travellers.
+    <br> Connect with a global community of nomads and get first-hand tips before you jet off to your dream places.
+    <br> Then come back, keep the karma going and share your best lessons with someone else.
+  </p>
 
-<form action="/login" method="post">
+  <form action="/login" method="post">
 
-<div class="centerwhite">Calling all Travellers.</div>
-</br>
+    <br>
 
-  <div class="centerwhite">
-    <label>Username:</label>
-  </div>
-  <div class="center">
-    <input type="text" name="username" value="<%= @user && @user.username %>">
-  </div>
 
-<br>
+      <div>
+      <h4>Username:</h4>
+      </div>
+      <div class="center">
+        <input type="text" name="username" value="<%= @user && @user.username %>">
+      </div>
 
-  <div class="centerwhite">
-    <label>Password:</label>
-  </div>
-  <div class="center">
-      <input type="text" name="password" value="<%= @user && @user.password %>">
-  </div>
+    <br>
 
-  <div class="center">
-    <input type="submit" value="Submit">
-  </div>
+      <div>
+        <h4>Password:</h4>
+      </div>
+      <div class="center">
+          <input type="text" name="password" value="<%= @user && @user.password %>">
+      </div>
+      <div>
+    </div>
 
-</form>
+    <br>
 
-<% if @user && @user.errors.any? %>
-  <div>
-    <strong>Email or password seems invalid, please fix:</strong>
-    <ul>
-      <% @user.errors.full_users.each do |user| %>
-        <li><%= user %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+    <div class="center"><a href="/login" class="btn btn-default">Log in</a></div>
 
-<br>
-<div class="centerwhite">Don't have a login?</div>
-  <form action="/signup">
-    <div class="center"><input type="submit" value="Sign up"></div>
-</form>
+  </form>
+
+  <% if @user && @user.errors.any? %>
+    <div>
+      <strong>Email or password seems invalid, please fix:</strong>
+      <ul>
+        <% @user.errors.full_users.each do |user| %>
+          <li><%= user %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <br>
+
+    <h4>Don't have a login?</h4>
+    <div class="center"><a href="/signup" class="btn btn-default">Sign up</a></div>
