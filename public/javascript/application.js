@@ -226,8 +226,17 @@ function autocomplete(evt) {
         hintbox.add(box).val('');
         var li = $("<li>").text(country);
 
-        li.appendTo("#country_list");
-        var route = (box.attr('id') == 'past_countries_box') ? 'past' : 'future';
+        
+        
+
+        var route = '';
+        if(box.attr('id') == 'past_countries_box') {
+          route = 'past';
+          li.appendTo("#p_country_list");
+        } else if(box.attr('id') == 'future_countries_box') {
+          route = 'future';
+          li.appendTo("#f_country_list");
+        }
         $.post('/addcountry/'+route+'/'+country);
     }
   }
