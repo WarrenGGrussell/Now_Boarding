@@ -10,12 +10,25 @@ get '/' do
 end
 
 get '/countries' do
-    @countries = Country.all
   erb :'countries/index'
 end
 
 post '/countries' do
     #Get country from tabcomplete
+end
+
+post '/addcountry/:route/:country' do
+  @future_countries = @countries.save(
+    params[:route]
+  )
+
+  if @future_countries.save
+    @future_countries = Countries.find(params[:id])
+    session[:user_id] = @user.id
+    redirect '/profile'
+  else
+    erb :'auth/countries'
+  end
 end
 
 ### LOGIN & SIGNUP
@@ -45,7 +58,7 @@ get '/profile' do
 end
 
 get '/profile/:id' do
-  @current_user = User.find(:id)
+  @current_user = User.find(params[:id])
   erb :'profile/index'
 end
 

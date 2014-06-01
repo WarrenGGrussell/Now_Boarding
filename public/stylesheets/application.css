@@ -97,7 +97,7 @@ label{
   color: black;
 }
 
-#country_list {
+.country_list {
   margin-top: 2em;
   list-style: none;
   text-align: center;
