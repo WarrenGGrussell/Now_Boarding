@@ -218,24 +218,34 @@ var country_list = [
 
 function autocomplete(evt) {
   if (evt.keyCode == 13) {
-    var box = $(this),
+    var box = $(this),  
+    // BOX IS CREATED. 'THIS' IS LIKE SELF. IN RUBY
         hintbox = box.siblings('input').first(),
+    // WE ALSO HAVE A SIBLING BOX CALLED HINTBOX
         country = hintbox.val();
 
     if (country != '') {
         hintbox.add(box).val('');
         var li = $("<li>").text(country);
+        // CREATES A LIST OF COUNTRIES
 
         
         
 
         var route;
         if(box.attr('id') == 'past_countries_box') {
+        // IF BOX HAS ID 'PAST_COUNTRIES_BOX
           route = 'past';
+        // THEN MAKE IT ROUTE TO PAST
           li.appendTo("#p_country_list");
+        // WHICH WILL APPEND THE LIST TO 'P_COUNTRY_LIST'
+        // THE LIST OF COUNTRIES WAS CREATED BY THE HINTBOX
         } else if(box.attr('id') == 'future_countries_box') {
+        // OTHERFUCKINGWISE IF BOX HAS ID 'FUTURE_COUNTRIES_BOX'
           route = 'future';
+        // THEN MAKE IT ROUTE TO PAST
           li.appendTo("#f_country_list");
+        // WHICH WILL APPEND THE LIST TO 'F_COUNTRY_LIST'
         }
         $.post('/addcountry/'+route+'/'+country);
     }

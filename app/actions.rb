@@ -2,6 +2,11 @@ helpers do
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
+
+  def dream_list
+    @dream_list ||= User.find(session[:country_id]) if session[:user_id]
+  end
+
 end
 
 # Homepage (Root path)
