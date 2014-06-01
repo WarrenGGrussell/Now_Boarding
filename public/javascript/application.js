@@ -229,7 +229,7 @@ function autocomplete(evt) {
         
         
 
-        var route = '';
+        var route;
         if(box.attr('id') == 'past_countries_box') {
           route = 'past';
           li.appendTo("#p_country_list");

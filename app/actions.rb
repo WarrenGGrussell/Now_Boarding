@@ -18,18 +18,29 @@ post '/countries' do
 end
 
 post '/addcountry/:route/:country' do
-  @future_countries = @countries.save(
-    params[:route]
-  )
-
-  if @future_countries.save
-    @future_countries = Countries.find(params[:id])
-    session[:user_id] = @user.id
-    redirect '/profile'
-  else
-    erb :'auth/countries'
+  if params[:route] == 'future' 
+    country = Country.first_or_create(name: params[:country])
+    current_user.future_countries.create(country: country)
+  elsif params[:route] == 'past'
+    country = Country.first_or_create(name: params[:country])
+    current_user.past_countries.create(country: country)
   end
 end
+    
+
+
+  # @future_countries = @countries.save(
+  #   params[:route]
+  # )
+
+  # if @future_countries.save
+  #   @future_countries = Countries.find(params[:id])
+  #   session[:user_id] = @user.id
+  #   redirect '/profile'
+  # else
+  #   erb :'auth/countries'
+  # end
+# end
 
 ### LOGIN & SIGNUP
 
